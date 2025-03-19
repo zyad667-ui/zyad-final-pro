@@ -1,0 +1,12 @@
+.accordion-body {
+    background-color: #df5e2f54;
+}
+
+.accordion-header>button {
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #df5e2f54;
+    color: $orange;
+}

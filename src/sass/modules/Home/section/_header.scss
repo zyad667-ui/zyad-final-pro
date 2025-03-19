@@ -101,8 +101,6 @@
     background: #007bff;
     color: #fff;
 }
-
-/* Icône de flèche */
 .navmenu .dropdown>a .toggle-dropdown {
     margin-left: 5px;
 }
@@ -110,7 +108,7 @@
 .respo-burger {
     display: none;
 }
-
+input{display: none;}
 @media (max-width: 468px) {
     .navmenu ul {
         flex-direction: column;

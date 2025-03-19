@@ -12043,12 +12043,15 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-/* Icône de flèche */
 .navmenu .dropdown > a .toggle-dropdown {
   margin-left: 5px;
 }
 
 .respo-burger {
+  display: none;
+}
+
+input {
   display: none;
 }
 
@@ -12454,6 +12457,18 @@ form {
   #contact-form {
     width: 80vw;
   }
+}
+.accordion-body {
+  background-color: rgba(223, 94, 47, 0.3294117647);
+}
+
+.accordion-header > button {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(223, 94, 47, 0.3294117647);
+  color: #E87532;
 }
 
 /*# sourceMappingURL=app.css.map */
