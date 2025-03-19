@@ -1,0 +1,55 @@
+.contznier-email {
+    display: flex;
+}
+
+.contact-info>h1 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.contact-father {
+    display: flex;
+    gap: 2vw;
+}
+
+.send-but {
+    background-color: #e87532;
+    border-color: transparent;
+    margin-top: 4vh;
+    padding-inline: 20vw;
+    border-radius: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-content: center;
+}
+
+.send-but:hover {
+    background-color: white;
+    color: black;
+}
+
+form {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+}
+
+@media(max-width: 468px) {
+    .contact-father {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-items: center;
+
+    }
+
+    .send-but {
+        padding-inline: 34vw;
+    }
+
+    #contact-form {
+        width: 80vw;
+    }
+
+
+
+}

@@ -1,0 +1,124 @@
+section {
+    .hero {
+        position: relative;
+
+    }
+
+    .hero-container {
+        padding-top: 10vh;
+    }
+
+    .left-hero {}
+
+    .left-hero>h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 1.5;
+    }
+
+    .left-hero>p {
+        font-size: large;
+        padding-top: 2vh;
+    }
+
+    .but {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .btn-1 {
+        border: solid #e87532;
+        background-color: #e87532;
+        padding: 0.8rem 2rem;
+        font-weight: 500;
+        border-radius: 50px;
+        text-decoration: none;
+        color: rgb(254, 250, 250);
+    }
+
+    .btn-2 {
+        border: #e87532 solid 1px;
+        background-color: white;
+        padding: 0.8rem 2rem;
+        font-weight: 500;
+        border-radius: 50px;
+        text-decoration: none;
+        color: #e87532;
+    }
+
+    .btn-1:hover {
+        background-color: #e8753298;
+        border: #e8753276;
+    }
+
+    .btn-2:hover {
+        background-color: #e87532;
+        color: white;
+        opacity: 0.9;
+    }
+
+    .hero-stats {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        margin-top: 2vh;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+
+    .stats>h2 {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    .right-hero {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+
+
+@media (max-width: 468px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: center !important;
+        justify-items: center !important;
+    }
+
+    .left-hero>h2 {
+        font-size: 2.5rem !important;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .left-hero>P {
+        text-align: center;
+    }
+
+    .but {
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    .hero-stats {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .stats {
+        align-items: center !important;
+        display: flex;
+        text-align: center;
+    }
+    
+}
