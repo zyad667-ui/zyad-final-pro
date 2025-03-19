@@ -12051,6 +12051,10 @@ textarea.form-control-lg {
   display: none;
 }
 
+input {
+  display: none;
+}
+
 @media (max-width: 468px) {
   .navmenu ul {
     flex-direction: column;
@@ -12197,6 +12201,13 @@ section .contain-about {
   padding-top: 60px !important;
   padding-bottom: 60px !important;
 }
+section .contznier-email {
+  gap: 2vh;
+}
+section .contanier-email > a {
+  text-decoration: none;
+  color: black;
+}
 section .about > h4, section .about > .h4 {
   color: #e87532;
   font-size: medium;
@@ -12264,11 +12275,17 @@ section .info-personnel .info-item .value {
 .signature .signature-info {
   padding-bottom: 60px;
 }
+.signature .contact-info {
+  display: flex;
+  flex-direction: column !important;
+  gap: 2vh !important;
+}
 
 @media (max-width: 468px) {
   .container-info {
     display: flex;
     flex-direction: column;
+    gap: 2vh;
   }
   .about-image {
     width: 400px !important;

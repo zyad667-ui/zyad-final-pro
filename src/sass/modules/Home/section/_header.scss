@@ -101,11 +101,16 @@
     background: #007bff;
     color: #fff;
 }
+
 .navmenu .dropdown>a .toggle-dropdown {
     margin-left: 5px;
 }
 
 .respo-burger {
+    display: none;
+}
+
+input {
     display: none;
 }
 
@@ -154,6 +159,4 @@
     input {
         display: none;
     }
-
-
 }
