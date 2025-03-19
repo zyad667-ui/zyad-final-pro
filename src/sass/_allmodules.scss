@@ -1,3 +1,14 @@
+@font-face{
+    font-family: "Roboto";
+    src: url("../../public/fonts/Roboto_Condensed-Regular.ttf");
+}
+
+*{
+    font-family: "Roboto" ,serif;
+}
+
+
 @import  "./modules/Home/home";
+
 
 
