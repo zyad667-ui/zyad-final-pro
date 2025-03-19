@@ -15,8 +15,17 @@
     background-color: #e87532;
 }
 
-.to-top:hover {opacity: 0.5;
+.to-top:hover {
+    opacity: 0.5;
+}
 
+@media(max-width: 468px) {
+    .to-top {
+        position: fixed;
+        width: 10vw;
+        height: 10vw;
+        align-items: center;
+        justify-items: center;
 
-
+    }
 }

@@ -114,7 +114,24 @@
 @media (max-width: 468px) {
     .navmenu ul {
         flex-direction: column;
-        display: none;
+    }
+
+    .navmenu ul {
+        position: fixed;
+        left: -200%;
+        top: 10vh;
+        height: 90vh;
+        width: 90vw;
+        background-color: #fff;
+    }
+
+    #menu:checked~.container-header>.navmenu>ul {
+        left: 0;
+        width: 100%;
+        margin-top: 2VH;
+        border-radius: 50PX;
+        height: 80%;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     }
 
     .navmenu .mobile-nav-toggle {
@@ -123,6 +140,7 @@
 
     .navmenu.active ul {
         display: flex;
+        margin-top: 20VH;
     }
 
     .navmenu .dropdown>ul {
@@ -133,6 +151,10 @@
 
     .respo-burger {
         display: block;
+    }
+
+    input {
+        display: none;
     }
 
 

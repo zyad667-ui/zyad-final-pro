@@ -11,12 +11,13 @@
 <body>
     <header class="container-fluid align-items-center sticky-top ">
         <!-- navbar -->
+        <input type="checkbox" id="menu">
         <div class="container-header  container-xl   ">
             <!-- logo -->
             <a class="easy-folio" href="">
                 <h4>Easyfolio</h4>
             </a>
-            <nav class="navmenu ">
+            <nav class="navmenu">
                 <ul>
                     <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
@@ -52,7 +53,8 @@
                 <i class="bi bi-facebook"></i>
                 <i class="bi bi-instagram"></i>
                 <i class="bi bi-linkedin"></i>
-                <i class="bi bi-list respo-burger"></i>
+                <label for="menu"><i class="bi bi-list respo-burger"></i></label>
+
             </div>
         </div>
     </header>
@@ -323,28 +325,114 @@
                     vel illum qui dolorem</p>
             </div>
         </div>
-        <div>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
+        <div class="container ">
+            <div id="carouselExample" class="carousel slide ">
+                <div class="carousel-inner m">
+                    <div class="carousel-item active">
+                        <div class="caousel-contenu">
+                            <div class="contenu-texte w-lg-50 container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos illum ea culpa
+                                    blanditiis corporis doloremque explicabo recusandae quo ipsam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit est, vero
+                                    laborum labore deserunt dolor optio inventore aliquam iusto.</p>
+                                <div>
+                                    <img src="./public/images/person-f-5.webp" class="rounded-circle image-profile"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./public/images/person-f-5.webp" class="card-image rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="caousel-contenu">
+                            <div class="contenu-texte w-lg-50 container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos illum ea culpa
+                                    blanditiis corporis doloremque explicabo recusandae quo ipsam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit est, vero
+                                    laborum labore deserunt dolor optio inventore aliquam iusto.</p>
+                                <div>
+                                    <img src="./public/images/person-f-8.webp" class="rounded-circle image-profile"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./public/images/person-f-8.webp" class="card-image rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="caousel-contenu">
+                            <div class="contenu-texte w-lg-50 container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos illum ea culpa
+                                    blanditiis corporis doloremque explicabo recusandae quo ipsam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit est, vero
+                                    laborum labore deserunt dolor optio inventore aliquam iusto.</p>
+                                <div>
+                                    <img src="./public/images/person-m-7.webp" class="rounded-circle image-profile"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./public/images/person-m-7.webp" class="card-image rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="caousel-contenu">
+                            <div class="contenu-texte w-lg-50 container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos illum ea culpa
+                                    blanditiis corporis doloremque explicabo recusandae quo ipsam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit est, vero
+                                    laborum labore deserunt dolor optio inventore aliquam iusto.</p>
+                                <div>
+                                    <img src="./public/images/person-f-5.webp" class="rounded-circle image-profile"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./public/images/person-f-5.webp" class="card-image rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="caousel-contenu">
+                            <div class="contenu-texte w-lg-50 container">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos illum ea culpa
+                                    blanditiis corporis doloremque explicabo recusandae quo ipsam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit est, vero
+                                    laborum labore deserunt dolor optio inventore aliquam iusto.</p>
+                                <div>
+                                    <img src="./public/images/person-f-5.webp" class="rounded-circle image-profile"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./public/images/person-f-5.webp" class="card-image rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+                <div class="button-div position-relative w-25">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark text-dark " aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
     <!-- service -->
@@ -419,7 +507,7 @@
     </section>
     <!--/ service -->
     <section>
-        <div class="faq container text-lg-center py-4">
+        <div class="faq container text-lg-center py-4 ">
             <div id="services" class="container section-title contain-about ">
                 <h2>Frequently Asked Questions</h2>
                 <div>
@@ -610,7 +698,7 @@
                 </div>
             </div>
     </footer>
-    <a href="#"><i class=" to-top bi bi-arrow-up-short"></i></a>
+    <a href="#"><i class=" to-top bi bi-arrow-up-short align-items-center"></i></a>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 

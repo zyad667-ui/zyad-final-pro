@@ -1,0 +1,26 @@
+.image-profile {
+    width: 60px;
+    height: 60px;
+}
+
+.card-image {
+    width: 360px;
+    height: 360px;
+}
+
+.caousel-contenu {
+    display: flex;
+}
+
+.button-div {
+    margin-left: 30vw;
+    margin-top: 2vh;
+}
+@media(max-width: 468px) {
+    .caousel-contenu {
+        display: flex;flex-direction: column;
+    }
+    .card-image{
+        display: none;
+    }
+}

@@ -12055,13 +12055,29 @@ textarea.form-control-lg {
 @media (max-width: 468px) {
   .navmenu ul {
     flex-direction: column;
-    display: none;
+  }
+  .navmenu ul {
+    position: fixed;
+    left: -200%;
+    top: 10vh;
+    height: 90vh;
+    width: 90vw;
+    background-color: #fff;
+  }
+  #menu:checked ~ .container-header > .navmenu > ul {
+    left: 0;
+    width: 100%;
+    margin-top: 2VH;
+    border-radius: 50PX;
+    height: 80%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   }
   .navmenu .mobile-nav-toggle {
     cursor: pointer;
   }
   .navmenu.active ul {
     display: flex;
+    margin-top: 20VH;
   }
   .navmenu .dropdown > ul {
     position: static;
@@ -12070,6 +12086,9 @@ textarea.form-control-lg {
   }
   .respo-burger {
     display: block;
+  }
+  input {
+    display: none;
   }
 }
 section .hero {
@@ -12284,6 +12303,15 @@ section .info-personnel .info-item .value {
   opacity: 0.5;
 }
 
+@media (max-width: 468px) {
+  .to-top {
+    position: fixed;
+    width: 10vw;
+    height: 10vw;
+    align-items: center;
+    justify-items: center;
+  }
+}
 .logo-footer {
   text-decoration: none !important;
   color: black !important;
@@ -12348,6 +12376,34 @@ footer {
   .skill-box-1 > p {
     width: 390px;
     font-weight: bold;
+  }
+}
+.image-profile {
+  width: 60px;
+  height: 60px;
+}
+
+.card-image {
+  width: 360px;
+  height: 360px;
+}
+
+.caousel-contenu {
+  display: flex;
+}
+
+.button-div {
+  margin-left: 30vw;
+  margin-top: 2vh;
+}
+
+@media (max-width: 468px) {
+  .caousel-contenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-image {
+    display: none;
   }
 }
 .contznier-email {
