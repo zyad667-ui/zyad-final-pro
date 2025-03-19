@@ -12051,10 +12051,6 @@ textarea.form-control-lg {
   display: none;
 }
 
-input {
-  display: none;
-}
-
 @media (max-width: 468px) {
   .navmenu ul {
     flex-direction: column;
@@ -12398,6 +12394,107 @@ footer {
 .button-div {
   margin-left: 30vw;
   margin-top: 2vh;
+}
+
+#sidebar:has(button[data-filter="web design"]:focus) ~ #all-design div:not([class*="web design"]),
+#sidebar:has(button[data-filter=graphiques]:focus) ~ #all-design div:not([class*=graphiques]),
+#sidebar:has(button[data-filter=motion]:focus) ~ #all-design div:not([class*=motion]),
+#sidebar:has(button[data-filter=branding]:focus) ~ #all-design div:not([class*=branding]) {
+  display: none;
+}
+
+.filteredList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 20vh;
+}
+
+#sidebar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+#sidebar .filter-option {
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+#sidebar .filter-option:hover {
+  color: orange;
+  background-color: orange;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+#sidebar .filter-option:focus {
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+}
+@media (max-width: 420px) {
+  #sidebar {
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+#all-design {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 3rem;
+  width: 80%;
+}
+@media (max-width: 420px) {
+  #all-design {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.card {
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  background: white;
+  text-align: left;
+}
+.card img:hover {
+  opacity: 50%;
+}
+
+.card:hover {
+  margin-top: 10px;
+}
+
+.category {
+  color: orange;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content {
+  padding: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 15px;
+  color: #666;
 }
 
 @media (max-width: 468px) {

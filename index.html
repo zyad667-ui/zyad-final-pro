@@ -54,7 +54,7 @@
                 <i class="bi bi-instagram"></i>
                 <i class="bi bi-linkedin"></i>
                 <label for="menu"><i class="bi bi-list respo-burger"></i></label>
-
+                <!-- <label for="menu"><i class="bi bi-x-lg"></i></label> -->
             </div>
         </div>
     </header>
@@ -232,83 +232,89 @@
 
 
     <!-- portfolio -->
-    <section class="container py-5">
-        <div class="text-center mb-4">
-            <h2>Portfolio</h2>
-            <p>Découvrez nos réalisations dans différents domaines.</p>
+    <div class="filteredList">
+        <div id="sidebar">
+            <button class="filter-option" data-filter="*" tabindex="-1">All works</button>
+            <button class="filter-option" data-filter="web design" tabindex="-1">Web Design</button>
+            <button class="filter-option" data-filter="graphiques" tabindex="-1">Graphiques</button>
+            <button class="filter-option" data-filter="motion" tabindex="-1">Motion</button>
+            <button class="filter-option" data-filter="branding" tabindex="-1">Branding</button>
         </div>
 
-        <div>
-            <div class="text-center mb-4">
-                <button class="btn btn-orange text-dark filter-btn" data-filter="*">All Work</button>
-                <button class="btn btn-outline-orange text-dark filter-btn" data-filter=".filter-web">Web
-                    Design</button>
-                <button class="btn btn-outline-orange text-dark filter-btn"
-                    data-filter=".filter-graphics">Graphics</button>
-                <button class="btn btn-outline-orange text-dark filter-btn" data-filter=".filter-motion">Motion</button>
-                <button class="btn btn-outline-orange text-dark filter-btn"
-                    data-filter=".filter-brand">Branding</button>
+        <div id="all-design">
+            <div class="branding">
+                <section class="card">
+                    <img class="image-design" width="100%" src="./public/images/portfolio-1.webp" alt="">
+                    <section class="content">
+                        <p class="category">Web Design</p>
+                        <p class="title">Modern Dashboard Interface</p>
+                        <p class="description">Maecenas faucibus mollis interdum sed posuere consectetur est at
+                            lobortis.</p>
+                    </section>
+                </section>
             </div>
-        </div>
 
-        <div class="row g-4 isotope-container">
-            <div class="col-md-6 portfolio-item filter-web">
-                <div class="card">
-                    <img src="./public/images/portfolio-1.webp" class="card-img-top" alt="Modern Dashboard Interface">
-                    <div class="card-body">
-                        <h5 class="card-title">Modern Dashboard Interface</h5>
-                        <p class="card-text">Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.
-                        </p>
-                    </div>
-                </div>
+            <div class="web design">
+                <section class="card">
+                    <img class="image-design" width="100%" src="./public/images/portfolio-1.webp" alt="">
+                    <section class="content">
+                        <p class="category">Web Design</p>
+                        <p class="title">Modern Dashboard Interface</p>
+                        <p class="description">Maecenas faucibus mollis interdum sed posuere consectetur est at
+                            lobortis.</p>
+                    </section>
+                </section>
             </div>
-            <div class="col-md-6 portfolio-item filter-graphics">
-                <div class="card">
-                    <img src="./public/images/portfolio-1.webp" class="card-img-top" alt="Creative Brand Identity">
-                    <div class="card-body">
-                        <h5 class="card-title">Creative Brand Identity</h5>
-                        <p class="card-text">Vestibulum id ligula porta felis euismod semper at vulputate.</p>
-                    </div>
-                </div>
+
+            <div class="graphiques">
+                <section class="card">
+                    <img class="image-design" width="100%" src="../public/images/portfolio-1.webp" alt="">
+                    <section class="content">
+                        <p class="category">Web Design</p>
+                        <p class="title">Modern Dashboard Interface</p>
+                        <p class="description">Maecenas faucibus mollis interdum sed posuere consectetur est at
+                            lobortis.</p>
+                    </section>
+                </section>
             </div>
-            <div class="col-md-6 portfolio-item filter-motion">
-                <div class="card">
-                    <img src="./public/images/portfolio-1.webp" class="card-img-top" alt="Product Animation Reel">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Animation Reel</h5>
-                        <p class="card-text">Donec ullamcorper nulla non metus auctor fringilla dapibus.</p>
-                    </div>
-                </div>
+
+            <div class="graphiques">
+                <section class="card">
+                    <img class="image-design" width="100%" src="./public/images/portfolio-1.webp" alt="">
+                    <section class="content">
+                        <p class="category">Web Design</p>
+                        <p class="title">Modern Dashboard Interface</p>
+                        <p class="description">Maecenas faucibus mollis interdum sed posuere consectetur est at
+                            lobortis.</p>
+                    </section>
+                </section>
             </div>
-            <div class="col-md-6 portfolio-item filter-brand">
-                <div class="card">
-                    <img src="./public/images/portfolio-1.webp" class="card-img-top" alt="Luxury Brand Package">
-                    <div class="card-body">
-                        <h5 class="card-title">Luxury Brand Package</h5>
-                        <p class="card-text">Aenean lacinia bibendum nulla sed consectetur elit.</p>
-                    </div>
-                </div>
+
+            <div class="motion">
+                <section class="card">
+                    <img class="image-design" width="100%" src="./public/images/portfolio-1.webp" alt="">
+                    <section class="content">
+                        <p class="category">Web Design</p>
+                        <p class="title">Modern Dashboard Interface</p>
+                        <p class="description">Maecenas faucibus mollis interdum sed posuere consectetur est at
+                            lobortis.</p>
+                    </section>
+                </section>
             </div>
-            <div class="col-md-6 portfolio-item filter-web">
-                <div class="card">
-                    <img src="./public/images/portfolio-1.webp" class="card-img-top" alt="E-commerce Platform">
-                    <div class="card-body">
-                        <h5 class="card-title">E-commerce Platform</h5>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 portfolio-item filter-graphics">
-                <div class="card">
-                    <img src="./public/images/portfolio-1.webp" class="card-img-top" alt="Digital Art Collection">
-                    <div class="card-body">
-                        <h5 class="card-title">Digital Art Collection</h5>
-                        <p class="card-text">Cras mattis consectetur purus sit amet fermentum.</p>
-                    </div>
-                </div>
+
+            <div class="branding">
+                <section class="card">
+                    <img class="image-design" width="100%" src="./public/images/portfolio-1.webp" alt="">
+                    <section class="content">
+                        <p class="category">Web Design</p>
+                        <p class="title">Modern Dashboard Interface</p>
+                        <p class="description">Maecenas faucibus mollis interdum sed posuere consectetur est at
+                            lobortis.</p>
+                    </section>
+                </section>
             </div>
         </div>
-    </section>
+    </div>
     <!-- /portfolio -->
     <section>
         <div>
